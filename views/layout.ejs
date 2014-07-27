@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%- title %></title>
+
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <meta name="description" content="A Template by Gozha.net">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Gozha.net">
+
+    <!-- Mobile Specific Metas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+
+    <!-- Fonts -->
+    <!-- Font awesome - icon font --
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- Roboto --
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700' rel='stylesheet' type='text/css'>
+    <!-- Open Sans --
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:800italic' rel='stylesheet' type='text/css'>
+
+    <!--
+      Stylesheets
+      ========================
+    -->
+    <link href="/styles/gozha-nav.css" rel="stylesheet" />
+    <!-- Select -->
+    <link href="/styles/external/jquery.selectbox.css" rel="stylesheet" />
+
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="/rs-plugin/css/settings.css" media="screen" />
+
+    <!-- Custom -->
+    <link href="/styles/style3860.css?v=1" rel="stylesheet" />
+
+
+    <!-- Modernizr -->
+    <script src="js/external/modernizr.custom.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]//>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+    <![endif]-->
+</head>
+
+</head>
+
+<body>
+<div class="wrapper">
+
+    <!-- Include the view file for the current controller/route -->
+    <%- partial('header.ejs') %>
+    <%- body %>
+    <%- partial('footer.ejs') %>
+
+</div>
+<!--
+
+  Client-side Javascript
+  ========================
+
+  You can import any js files in your `assets` directory as you would
+  normally: using <script></script> tags.
+
+  Here's an example of importing a few dependencies, in order:
+-->
+<!-- Bring in the socket.io client -->
+<script type="text/javascript" src="/js/socket.io.js"></script>
+<!-- then beef it up with some convenience logic for talking to Sails.js -->
+<script type="text/javascript" src="/js/sails.io.js"></script>
+<!-- listen on socket.io for incoming messages -->
+<script type="text/javascript" src="/js/app.js"></script>
+
+<!-- Your scripts here? -->
+
+<!-- jQuery 1.11.1-->
+<script src="/js/jquery-1.11.1.min.js"></script>
+<!-- Migrate -->
+<script src="/js/external/jquery-migrate-1.2.1.min.js"></script>
+<!-- Bootstrap 3-->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- jQuery REVOLUTION Slider -->
+<script type="text/javascript" src="/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- Mobile menu -->
+<script src="/js/jquery.mobile.menu.js"></script>
+<!-- Select -->
+<script src="/js/external/jquery.selectbox-0.2.min.js"></script>
+<!-- Stars rate -->
+<script src="/js/external/jquery.raty.js"></script>
+
+<!-- Form element -->
+<script src="/js/external/form-element.js"></script>
+<!-- Form validation -->
+<script src="/js/form.js"></script>
+
+<!-- Twitter feed -->
+<script src="/js/external/twitterfeed.js"></script>
+
+<!-- Custom -->
+<script src="/js/custom.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        init_Home();
+    });
+</script>
+
+
+<!-- Your scripts here? -->
+<!-- Your scripts here? -->
+
+
+<!--
+
+  Looking for client-side CoffeeScript or TypeScript?
+  ================================================
+
+  CoffeeScript and TypeScript precompilation are not installed by default,
+  but if you'd like to mix those features in, it is straightforward to
+  `npm install` the relevant grunt community modules and modify your Gruntfile
+  to use them.
+
+-->
+
+
+
+<!--
+
+  Another way: The Asset Linker
+  ========================
+
+  Sails supports a Grunt-based asset linker, to automatically inject
+  <link> and <script> tags, as well any client-side templates you're using
+  into your HTML layouts and views, respecting dependencies.
+
+  You created this Sails app with the asset linker disabled.
+  If you change your mind, check out the docs on the subject:
+  http://sailsjs.org/#!documentation/asset-management
+
+-->
+
+</body>
+</html>
